@@ -401,13 +401,15 @@ aside .section-tittle {
 }
 .activity div {
   width: 300px;
+  display: flex;
+  flex-direction: column;
 }
 .activity .item {
   box-shadow: 3px 3px 3px #e7e7e7;
   border-radius: 24px;
   height: 100%;
   width: 300px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 .img-big {
   width: 100%;
@@ -419,6 +421,7 @@ aside .section-tittle {
   object-fit: cover;
 }
 .img-medium {
+  flex: 2;
   width: 100%;
   height: 235px;
   margin: 0;
@@ -428,6 +431,7 @@ aside .section-tittle {
   object-fit: cover;
 }
 .img-little {
+  flex: 1;
   width: 100%;
   height: 90px;
   margin: 0;
