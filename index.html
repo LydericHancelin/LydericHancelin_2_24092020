@@ -18,19 +18,18 @@
 <body>
     <header>
         <img class="logo" src="./assets/img/Booki.png" alt="" />
-        <nav>
-            <a href="#section-hebergement">Hébergements</a>
-            <a href="#section-activity">Activités</a>
-        </nav>
+        <ul>
+            <li><a href="#section-hebergement">Hébergements</a></li>
+            <li><a href="#section-activity">Activités</a></li>
+        </ul>
     </header>
     <main>
         <section id="section-search">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p class="details">en plein centre ville ou en pleine nature</p>
+            <p class="detailsTitre">En plein centre ville ou en pleine nature</p>
             <div class="input-search">
                 <div class="input-icone"><i class="fas fa-map-marker-alt"></i></div>
                 <input type="text" class="input-search-area" value="Marseille, France">
-                <!-- mettre un bouton -->
                 <a class="blue-search-link" href="search">Rechercher</a>
             </div>
             <div class="filtres">
@@ -61,7 +60,7 @@
             <article id="hebergement">
                 <p class="section-tittle">Hébergements à Marseille</p>
                 <div class="hebergement">
-                    <div class="item-hebergement">
+                    <a href="#cannebiere" class="item-hebergement">
                         <img class="img-hebergement" src="assets/img/hebergements/cannebiere.jpg">
                         <p id="nom-hebergement">Auberge de la Cannebière</p>
                         <p class="details">Nuit à partir de <span>25€</span></p>
@@ -72,8 +71,8 @@
                             <i class="fas fa-star fa-xs"></i>
                             <i id="gray-star" class="fas fa-star fa-xs"></i>
                         </div>
-                    </div>
-                    <div class="item-hebergement">
+                    </a>
+                    <a href="#port" class="item-hebergement">
                         <img class="img-hebergement" src="assets/img/hebergements/port.jpg">
                         <p id="nom-hebergement">Hôtel du port</p>
                         <p class="details">Nuit à partir de <span>52€</span></p>
@@ -84,8 +83,8 @@
                             <i class="fas fa-star fa-xs"></i>
                             <i class="fas fa-star fa-xs"></i>
                         </div>
-                    </div>
-                    <div class="item-hebergement">
+                    </a>
+                    <a href="#mouettes" class="item-hebergement">
                         <img class="img-hebergement" src="assets/img/hebergements/mouettes.jpg">
                         <p id="nom-hebergement">Hôtel les mouettes</p>
                         <p class="details">Nuit à partir de <span>76€</span></p>
@@ -96,10 +95,10 @@
                             <i class="fas fa-star fa-xs"></i>
                             <i id="gray-star" class="fas fa-star fa-xs"></i>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="hebergement">
-                    <div class="item-hebergement">
+                    <a href="#mer" class="item-hebergement">
                         <img class="img-hebergement" src="assets/img/hebergements/mer.jpg">
                         <p id="nom-hebergement">Hôtel de la mer</p>
                         <p class="details">Nuit à partir de <span>46€</span></p>
@@ -110,8 +109,8 @@
                             <i id="gray-star" class="fas fa-star fa-xs"></i>
                             <i id="gray-star" class="fas fa-star fa-xs"></i>
                         </div>
-                    </div>
-                    <div class="item-hebergement">
+                    </a>
+                    <a href="#panier" class="item-hebergement">
                         <img class="img-hebergement" src="assets/img/hebergements/panier.jpg">
                         <p id="nom-hebergement">Auberge Le Panier</p>
                         <p class="details">Nuit à partir de <span>23€</span></p>
@@ -122,8 +121,8 @@
                             <i class="fas fa-star fa-xs"></i>
                             <i id="gray-star" class="fas fa-star fa-xs"></i>
                         </div>
-                    </div>
-                    <div class="item-hebergement">
+                    </a>
+                    <a href="Amina" class="item-hebergement">
                         <img class="img-hebergement" src="assets/img/hebergements/amina.jpg">
                         <p id="nom-hebergement">Hôtel chez Amina</p>
                         <p class="details">Nuit à partir de <span>96€</span></p>
@@ -134,13 +133,13 @@
                             <i class="fas fa-star fa-xs"></i>
                             <i class="fas fa-star fa-xs"></i>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <p class="moreInfo">Afficher plus</p>
             </article>
             <aside>
                 <p class="section-tittle">Les plus populaires</p>
-                <div class="item-aside">
+                <a href="#soleil" class="item-aside">
                     <img class="img-aside" src="assets/img/hebergements/soleil.jpg">
                     <div>
                         <p class="nom-hebergement">Hôtel : Le soleil du matin</p>
@@ -153,8 +152,8 @@
                             <i class="fas fa-star fa-xs"></i>
                         </div>
                     </div>
-                </div>
-                <div class="item-aside">
+                </a>
+                <a href="#coeur" class="item-aside">
                     <img class="img-aside" src="assets/img/hebergements/coeur.jpg">
                     <div>
                         <p class="nom-hebergement">Au coeur de l'eau Chambres d'hôtes</p>
@@ -167,8 +166,8 @@
                             <i id="gray-star" class="fas fa-star fa-xs"></i>
                         </div>
                     </div>
-                </div>
-                <div class="item-aside">
+                </a>
+                <a href="#bleu" class="item-aside">
                     <img class="img-aside" src="assets/img/hebergements/bleu.jpg">
                     <div>
                         <p class="nom-hebergement">Hôtel : tout bleu et Blanc</p>
@@ -181,57 +180,67 @@
                             <i id="gray-star" class="fas fa-star fa-xs"></i>
                         </div>
                     </div>
-                </div>
+                </a>
             </aside>
         </section>
         <section id="section-activity">
             <p class="section-tittle">Activités à Marseille</p>
             <div class="activity">
-                <div>
+                <div class="item">
                     <img class="img-big" src="assets/img/hebergements/vieux.jpg">
                     <p class="nom">Vieux port</p>
                 </div>
                 <div>
-                    <img class="img-medium" src="assets/img/hebergements/fort.jpg">
-                    <p class="nom">Fort de Pomègues</p>
-                    <img class="img-little" src="assets/img/hebergements/ile.jpg">
-                    <p class="nom">Iles du Frioul</p>
+                    <div class="item">
+                        <img class="img-medium" src="assets/img/hebergements/fort.jpg">
+                        <p class="nom">Fort de Pomègues</p>
+                    </div>
+                    <div class="item">
+                        <img class="img-little" src="assets/img/hebergements/ile.jpg">
+                        <p class="nom">Iles du Frioul</p>
+                    </div>
                 </div>
-                <div>
+                <div class="item">
                     <img class="img-big" src="assets/img/hebergements/calanques.jpg">
                     <p class="nom">Parc National des Calanques</p>
                 </div>
                 <div>
-                    <img class="img-little" src="assets/img/hebergements/garde.jpg">
-                    <p class="nom">Notre-Dame-de-la-Garde</p>
-                    <img class="img-medium" src="assets/img/hebergements/longchamp.jpg">
-                    <p class="nom">Parc Longchamp</p>
+                    <div class="item">
+                        <img class="img-50p" src="assets/img/hebergements/garde.jpg">
+                        <p class="nom">Notre-Dame-de-la-Garde</p>
+                    </div>
+                    <div class="item">
+                        <img class="img-50p" src="assets/img/hebergements/longchamp.jpg">
+                        <p class="nom">Parc Longchamp</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div>
-            <h2>A propos</h2>
-            <ul>
-                <li>Fonctionnement du site</li>
-                <li>Conditions générales de vente</li>
-                <li>Données et confidentialité</li>
-            </ul>
-        </div>
-        <div>
-            <h2>Nos hébergements</h2>
-            <ul>
-                <li>Charte qualité</li>
-                <li>Soumettre votre hôtel</li>
-            </ul>
-        </div>
-        <div>
-            <h2>Assistance</h2>
-            <ul>
-                <li>Centre d'aide</li>
-                <li>Nous contacter</li>
-            </ul>
+        <div class="structure">
+            <div>
+                <h2>A propos</h2>
+                <ul>
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions générales de vente</li>
+                    <li>Données et confidentialité</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Nos hébergements</h2>
+                <ul>
+                    <li>Charte qualité</li>
+                    <li>Soumettre votre hôtel</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Assistance</h2>
+                <ul>
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
