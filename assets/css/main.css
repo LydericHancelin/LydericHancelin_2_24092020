@@ -118,7 +118,7 @@ header ul li:hover::before {
 }
 /*--Body--*/
 #section-search {
-  padding: 32px;
+  padding: 0;
 }
 #section-search h1 {
   margin-bottom: 8px;
@@ -137,14 +137,28 @@ header ul li:hover::before {
   border: #f2f2f2 1px solid;
   border-radius: 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  width: min-content;
   height: 40px;
-  width: 320px;
-  margin-bottom: 2em;
+  margin-bottom: 32px;
+}
+.input-search .fa-map-marker-alt {
+  color: black;
+}
+.input-search .fa-search {
+  color: white;
+  background-color: #0065fc;
+  width: 30px;
+  border: #0065fc;
+  border-radius: 10px;
 }
 .input-search-area {
   border: none;
   font-weight: bold;
+  width: 200px;
+  font-size: 14px;
   padding-left: 16px;
 }
 .input-icone {
@@ -152,7 +166,8 @@ header ul li:hover::before {
   align-items: center;
   justify-content: center;
   background-color: #f2f2f2;
-  width: 24px;
+  width: 30px;
+  height: 34px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 4px;
@@ -163,9 +178,22 @@ header ul li:hover::before {
   color: white;
   font-weight: bold;
   background-color: #0065fc;
-  padding: 8px;
+  height: 40px;
+  width: 100px;
+  padding: 0 8px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+.blue-search-link-mob {
+  display: flex;
+  display: none;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  background-color: #0065fc;
+  height: 40px;
+  padding: 0 8px;
+  border-radius: 10px;
 }
 #section-search .filtres {
   display: flex;
@@ -204,16 +232,17 @@ header ul li:hover::before {
 .info {
   display: flex;
   align-items: center;
+  margin-bottom: 32px;
 }
 .info .icone-info {
-  border: 2px solid #f2f2f2;
+  border: 2px solid #e7e7e7;
   border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 4px;
-  width: 8px;
-  height: 8px;
+  width: 16px;
+  height: 16px;
 }
 .info span {
   color: #0065fc;
@@ -225,6 +254,12 @@ header ul li:hover::before {
   }
   .filtre {
     margin-bottom: 8px;
+  }
+  .blue-search-link {
+    display: none;
+  }
+  .blue-search-link-mob {
+    display: flex;
   }
 }
 /*hebergement*/
@@ -280,20 +315,21 @@ header ul li:hover::before {
 }
 .item-hebergement div {
   display: flex;
-  padding-left: 4px;
-  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-bottom: 8px;
 }
 .item-hebergement .details {
-  padding-left: 4px;
-  margin: 4px 0;
+  margin: 0;
+  padding: 8px;
 }
 .nom-hebergement {
+  margin: 0;
   font-weight: bold;
-  margin: 2px 0;
 }
 #nom-hebergement {
-  margin: 2px 0;
-  margin-left: 4px;
+  margin: 0;
+  padding: 8px;
+  padding-bottom: 0;
   font-weight: bold;
 }
 .fas {
@@ -494,12 +530,11 @@ footer {
 }
 .structure ul {
   list-style: none;
-  font-size: 0.8em;
   margin-left: 0;
   padding-left: 0;
 }
 .structure li {
-  margin-bottom: 0.5em;
+  margin-bottom: 4px;
 }
 
 @media (max-width: 1340px) {
