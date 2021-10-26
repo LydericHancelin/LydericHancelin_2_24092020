@@ -248,6 +248,9 @@ header ul li:hover::before {
   color: #0065fc;
 }
 @media (max-width: 1340px) {
+  #section-search {
+    padding: 32px;
+  }
   #section-search .filtres h2 {
     width: 100%;
     margin-bottom: 16px;
@@ -344,7 +347,7 @@ header ul li:hover::before {
   }
   #hebergement {
     background-color: white;
-    padding: 0 32px;
+    padding: 32px;
     width: 100%;
   }
   #hebergement .hebergement {
@@ -369,7 +372,7 @@ aside {
   border-radius: 24px;
   padding: 32px;
   margin-bottom: 32px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 aside .section-tittle {
   margin: 0;
@@ -416,8 +419,16 @@ aside .section-tittle {
 @media (max-width: 1340px) {
   aside {
     margin: 0;
+    padding: 32px auto;
+    width: 100%;
     margin-bottom: 32px;
     border-radius: 0;
+  }
+  .item-aside {
+    width: 100%;
+  }
+  .item-aside .img-aside {
+    width: 100%;
   }
 }
 /*activity*/
